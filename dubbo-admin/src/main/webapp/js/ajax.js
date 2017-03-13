@@ -36,9 +36,9 @@ var Ajax = {
 				}
 			}
 		};
-		XR.send(null)
+		XR.send(null);
 	},
-	delete : function(url, fn) {
+	'delete' : function(url, fn) {
 		XR.open("DELETE", url, true);
 		XR.onreadystatechange = function() {
 			if (XR.readyState == 4) {
